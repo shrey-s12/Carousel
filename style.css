@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     display: flex;
     justify-content: center;
@@ -46,4 +48,30 @@ body {
     height: 100%;
     background-color: #4caf50;
     transition: width 0.5s ease;
+}
+
+/* Navigation button styling */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
